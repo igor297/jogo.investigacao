@@ -36,6 +36,13 @@ yarn-error.*
 # Vercel
 .vercel
 
+# Python Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/game_database.db
+
 # typescript
 *.tsbuildinfo
 

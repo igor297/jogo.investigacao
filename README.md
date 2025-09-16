@@ -1,12 +1,54 @@
 # 🔍 Jogo de Investigação - Solar dos Campos
 
-Um jogo de investigação mobile criado com React Native/Expo que funciona tanto como app mobile quanto PWA web.
+Um jogo de investigação completo com frontend React Native/Expo e backend Python Flask. Funciona como app mobile, PWA web e aplicação completa com IA.
 
-## 🚀 Deploy no Vercel
+## 🏗️ Arquitetura
+
+- **Frontend**: React Native + Expo (PWA)
+- **Backend**: Python Flask + SQLite + IA
+- **Deploy**: Vercel (frontend) + Docker (fullstack)
+
+## 🚀 Opções de Deploy
 
 ### Pré-requisitos
 - Conta no [Vercel](https://vercel.com)
 - Repositório no GitHub com este código
+
+## 🐳 Deploy Completo (Frontend + Backend)
+
+### Opção 1: Docker Compose (Recomendado)
+
+```bash
+# Clonar repositório
+git clone https://github.com/igor297/jogo.investigacao.git
+cd jogo.investigacao
+
+# Build do frontend
+npm install
+npm run build
+
+# Rodar com Docker
+docker-compose up -d
+
+# Acesso:
+# Frontend: http://localhost:3000
+# Backend: http://localhost:5000
+```
+
+### Opção 2: Desenvolvimento Local
+
+```bash
+# Backend Python
+cd backend
+pip install -r requirements.txt
+python app.py
+
+# Frontend (nova aba)
+npm install
+npm run web
+```
+
+## 🌐 Deploy Frontend Only (Vercel)
 
 ### 📋 Passos para Deploy
 
