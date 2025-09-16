@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: jogo-investigacao
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve web-build -s -l 10000
+    plan: free
+    branch: master
+    envVars:
+      - key: NODE_ENV
+        value: production
